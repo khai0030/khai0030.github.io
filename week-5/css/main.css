@@ -1,24 +1,32 @@
-body {
+body { /* 0,0,0,1 */
     color:pink;
 }
 
-/* Change color of all paragraphs and listed items */
+/* change color of all paragraphs and listed items */
 p,li{
     color:plum;
 }
 
+div#top-level .read-more p.yellow.content,
+.content-heading { /*0,1,3,2 */
+    color:powderblue
+}
+
+body section.main-wrapper #primary-article.doorknob article > p { /* 0,1,2,4 */
+    color:royalblue
+}
 /* target child elements */
-section h1 {
+section h1 { /* 0,0,0,2 */
     color: palevioletred;
 }
 
 /* style a class */
-.secondary-heading{
+.secondary-heading{ /* 0,0,1,0 */
     color:rgb(173, 86, 173);
 }
 
 /* style and id */
-#main-section {
+#main-section { /* 0,1,0,0 */
     color:plum;
     font-weight: bold;
 }
@@ -26,22 +34,36 @@ section h1 {
 /* LVHA */
 
 a:link{
-    color: rgb(168, 38, 38);
+    color: rgb(206, 131, 131);
 }
 
 a:visited{
-    color:green;
+    color:plum;
 }
 
 a:hover{
-    color: rgb(151, 196, 151);
+    color: rgb(197, 173, 187);
 }
 
 a:active{
-    color:rgb(228, 165, 165);
+    color:rgb(197, 173, 187);
 
 }
 
 a[href="http://algonquincollege.com"]{
-color: green
+color: rgb(206, 131, 131);
+
+}
+
+a:visited{
+    color:plum;
+}
+
+a:hover{
+    color: rgb(197, 173, 187);
+}
+
+a:active{
+    color:rgb(197, 173, 187);
+
 }
