@@ -2,4 +2,46 @@ body {
     color:pink;
 }
 
-/* This is a CSS comment */
+/* Change color of all paragraphs and listed items */
+p,li{
+    color:plum;
+}
+
+/* target child elements */
+section h1 {
+    color: palevioletred;
+}
+
+/* style a class */
+.secondary-heading{
+    color:rgb(173, 86, 173);
+}
+
+/* style and id */
+#main-section {
+    color:plum;
+    font-weight: bold;
+}
+
+/* LVHA */
+
+a:link{
+    color: rgb(168, 38, 38);
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    color: rgb(151, 196, 151);
+}
+
+a:active{
+    color:rgb(228, 165, 165);
+
+}
+
+a[href="http://algonquincollege.com"]{
+color: green
+}
