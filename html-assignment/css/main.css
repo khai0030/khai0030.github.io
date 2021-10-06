@@ -1,0 +1,33 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+header,footer{
+    background-color:pink
+}
+
+.site-title{
+color:purple;
+}
+
+#my-image{
+    box-shadow: 0,0,2px,1px,black;
+    }
+
+ li:nth-child(odd){
+        background-color: plum;
+    }
+
+.unordered-list{
+    list-style-type:none;
+    }
+
+    a:link {
+        
+        text-decoration:none;
+      }
+      
+    a:hover {
+        background-color:pink;
+      }
