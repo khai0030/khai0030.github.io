@@ -30,10 +30,12 @@ color:purple;
     a:link {
         background-color:powderblue;
     }
-    a:link {
-        border-width:10px;
-    }
 
     a:hover {
         background-color:pink;
-      }
+    }
+
+   a.border:hover {
+       border-color:000;
+       border-width:10px;
+   }
