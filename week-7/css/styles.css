@@ -1,0 +1,60 @@
+html{
+    box-sizing: border-box
+}
+
+*,
+*:before
+*:atfer {
+    box-sizing: inherit;
+}
+
+nav ul li {
+    display:inline-block;
+    margin:10px;
+}
+
+.box {
+    width: 200px;
+    background-color: pink;
+    color: rgb(114, 23, 73);
+    /* introduce box model*/
+    padding: 10px;
+    border: 5px solid rgb(114, 23, 73);
+    margin: 10px;
+    /*float boxes beside each other */
+    float:left;
+}
+
+/*center a box level element */
+/*.box1 {
+    margin: 0 auto;
+}*/
+
+.box1 {
+    box-sizing: content-box;
+}
+
+.box2 {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+content:"";
+display: block;
+clear: both;
+}
+
+.stage {
+    height: 500px;
+    background-color:rebeccapurple;
+}
+
+.prop {
+    height: 100px;
+    width: 100px;
+    background-color: plum;
+    /* add positioning values */
+    position: relative;
+    top: 100px;
+    left: 10px;
+}
