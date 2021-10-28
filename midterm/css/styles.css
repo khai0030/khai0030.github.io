@@ -1,0 +1,26 @@
+body{
+    background-color: #aad4cf;
+}
+/* modifies page header */
+.LoneStarfish{
+font-family: sans-serif;
+color: white;
+position: absolute;
+top:50%;
+left: 50%;
+}
+
+/* modifies article about starfish */
+h2{
+    font-family: sans-serif;
+}
+article img {
+ width: 250px;
+ height: 250px;
+ float: left;
+ padding: 10px;
+}
+article p{
+font-family: sans-serif;
+text-align: wrap;
+}
