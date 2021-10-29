@@ -1,15 +1,39 @@
+html{
+    background-color:#aad4cf;
+    margin: 0 16%;
+}
 body{
-    background-color: #d4e9e7;
+    background-color:#d4e9e7;
+    margin: 0;
 }
 /* modifies page header */
-.LoneStarfish{
+header {
+background-image: url('../images/lone-starfish-wide.jpg');
+background-repeat: no-repeat; 
+width: 100%;
+height: 280px;
+display: Block;
+float: left;
+}
+
+h1{
 font-family: sans-serif;
 color: white;
 position: absolute;
-top:50%;
-left: 50%;
+top: 20%;
+left: 47%;
+font-size: 40px;
+font-weight: normal;
 }
 
+/* customizing navigation bar */
+nav {
+    font-family: sans-serif; 
+}
+a:link{
+    text-decoration: none;
+    color:black;
+}
 
 /* modifies article about starfish */
 h2{
@@ -22,7 +46,7 @@ article img {
  padding: 10px;
 }
 article p {
-font-family: sans-serif;
+font-family:sans-serif ;
 }
 article ul {
 font-family:sans-serif;
