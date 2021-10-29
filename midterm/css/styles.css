@@ -1,4 +1,4 @@
-html{
+html {
     background-color:#aad4cf;
     margin: 0 16%;
 }
@@ -34,17 +34,39 @@ font-weight: normal;
 
 /* customizing navigation bar */
 nav {
-    font-family: sans-serif; 
+    font-family: sans-serif;
+    background-color: #d4e9e7;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
 }
-a:link{
+.nav a{
     text-decoration: none;
     color:black;
+    font-weight: bold;
+    float: none;
+}
+
+/* adds line between links */
+.nav li{
+    display: inline;
+    width:25%;
+    border-right: 1px solid black;
+    float: left;
+    position: relative;
+    padding: 6px 30px;
+}
+
+.nav li:last-child{
+    border-right: 0;
 }
 
 /* modifies article about starfish */
 h2{
     font-family: sans-serif;
 }
+/* makes image float and wraps text around it */
 article img {
  width: 250px;
  height: 250px;
@@ -62,7 +84,33 @@ font-family:sans-serif;
 form{
     font-family: sans-serif;
     border: 1px solid black;
-    padding: 16px;
+    padding: 1%;
+    margin: 0 1% 0;
+}
+
+/* modifies text area */
+#fullname{
+    width: 98%;
+    height: 30%;
+    background-color:white;
+    border-color: white;
+    margin: 5px 0;
+}
+
+#email{
+    width: 98%;
+    height: 30%;
+    background-color:white;
+    border-color: white;
+    margin: 5px 0;
+}
+
+#message {
+width: 98%;
+height: 50px;
+background-color:white;
+border-color: white;
+margin: 5px 0;
 }
 
 /* question in form */
@@ -76,8 +124,7 @@ h3{
     font-family:sans-serif;
     background:#d4e9e7;
     color:black;
-    border-style:outset;
-    border-color:black 1px;
+    border:1px solid black;
     height:40px;
     width:65px;
 }
