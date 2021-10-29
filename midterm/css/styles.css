@@ -7,13 +7,19 @@ body{
     margin: 0;
 }
 /* modifies page header */
-header {
+.header {
 background-image: url('../images/lone-starfish-wide.jpg');
 background-repeat: no-repeat; 
 width: 100%;
 height: 280px;
 display: Block;
 float: left;
+}
+
+header{
+    width: 100%;
+    height: 280px;
+    display: Block;
 }
 
 h1{
