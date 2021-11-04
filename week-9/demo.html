@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS responsive demo</title>
+
+<style>
+    body{
+        background-color: pink;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    h1,h2,h3,h4,h5,h6,p{
+        margin: 0;
+    }
+
+    header, main, footer{
+        width: 100%;
+        margin: 0 auto;
+        background: white;
+    }
+
+    header{
+        background:palevioletred;
+        color: white;
+    }
+
+    .container{
+        width: auto;
+        padding: 40px;
+    }
+
+    img{
+        max-width:100%;
+    }
+    .small{
+        display: block;
+    }
+    .big{
+        display: none;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1000px){
+        body{
+            font-size: 2.5rem;
+        }
+        header{
+            background: purple;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        body{
+            font-size: 3.5rem;
+        }
+        header{
+            background:plum;
+        }
+    }
+
+</style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>Header</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <img src="images/wolfpic.jpg" alt="big" class="big">
+            <img src="images/small.png" alt="small" class= "small">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fugit molestias voluptatibus veniam porro, officia quaerat veritatis sapiente perspiciatis quis unde. Corporis aliquid quae eius, at similique eos eaque facilis?</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            &copy; Algonquin College
+        </div>
+    </footer>
+    
+   
+</body>
+</html>
