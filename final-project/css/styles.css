@@ -47,47 +47,77 @@ table {
 	border-spacing: 0;
 }
 
-/* MOBILE CSS STARTS HERE */
+/* ============= MY CSS =============*/
+/* === MOBILE CSS STARTS HERE === */
 
 body{
     font-family:'Open Sans', sans-serif;
+	background-color: white;
+}
+body p{
+	font-size: 14px;
+}
+
+/* nav styling starts here */
+header{
+	width:100%;
+	margin: 0 auto;
+}
+.logo{
+	background-color:#c78c06;
+	width: auto;
 }
 
 nav li{ 
     background-color: #222;
+	padding: 13px;
     text-align: center;
+	font-size: 18px;
 }
-
-li a{
-    text-decoration: none;
-    color: #c78c06;
-}
-
 nav .home{
     background-color: #c78c06; 
 }
-
 nav .homea{
     color: #222;
 }
-
+nav ul li a{
+	text-decoration: none;
+    color: #c78c06;
+}
+/* customizing search bar */
+nav form{
+	display:flex;
+}
+#search{
+	width: 94.3%;
+	padding: 15px;
+	font-size: 18px;
+	font-family: Arial;
+	flex-grow: 1;
+}
 .searchbutton {
     float: right;
+	padding: 14px;
+}
+/* nav styling ends here */
+
+/* customizing header */
+.intro{
+	background-image: url("../images/main-banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 8.5% 0;
+}
+.blacksquare{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+.blacksquare p{
+	color: white;
+	margin-bottom: 10px;
 }
 
-
-
-h1{
-    font-weight: bold;
-}
-h2{
-	font-weight: bold;
-	font-size: 40px;
-}
-h3{ 
-	font-weight: bold;
-	font-size: 30px;
-}
+/* modifies button in header */
 .button1{
 	background-color: #c78c06; 
   	border: none;
@@ -96,9 +126,36 @@ h3{
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	font-size: 20px;
+  	font-size: 21px;
 }
 
+/* modifies all headings in html */
+h1{  /*Main Title*/
+    font-weight: bold;
+	font-size: 71px;
+	color: white;
+}
+h2{  /*about, services, vision, team, location, contact*/
+	font-weight: bold;
+	font-size: 48px;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+h3{  /*every category in services, john doe, bob rite, message*/
+	font-weight: bold;
+	font-size: 30px;
+}
+h4{  /*CEO/CFO, Co-owner*/
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* section about styling starts here */
 .section-about{
     background-color: #ffe6ac;
 	padding: 10px;
@@ -108,21 +165,82 @@ h3{
 	height: auto;
 }
 .section-about h2,p{
-	padding: 10px;
+	padding: 1rem 1rem;
+}
+/* section about styling ends here */
+
+/* section services styling starts here */
+.section-services{
+	padding: 1rem 1rem;
+	max-width: 760px;
 }
 
 .digital{
 	background-color: #ffe6ac;
+	margin-bottom: 1rem;
 }
 .digital img{
 	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
 }
 .digital h3,p{
 	padding: 10px;
 }
 
- 
+.marketing{
+	background-color: #ffe6ac;
+	margin-bottom: 1rem;
+}
+.marketing img{
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+}
+.marketing h3,p{
+	padding: 10px;
+}
 
+.video{
+	background-color: #ffe6ac;
+	margin-bottom: 1rem;
+}
+.video img{
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+}
+.video h3,p{
+	padding:10px;
+}
+
+.web{
+	background-color: #ffe6ac;
+	margin-bottom: 1rem;
+}
+.web img{
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+}
+.web h3,p{
+	padding:10px;
+}
+
+.print{
+	background-color: #ffe6ac;
+	margin-bottom: 1rem;
+}
+.print img{
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+}
+.print h3,p{
+	padding:10px;
+}
+
+/* modifies all buttons in section services */
 .buttons{
 	background-color: #222; 
   	border: none;
@@ -131,15 +249,141 @@ h3{
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	font-size: 20px;
+  	font-size: 21px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+}
+/* section services styling ends here */
+
+/* section vision styling starts here */
+.section-vision{
+	background-image: url("../images/vision.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+.vision{
+	padding: 0.5rem 1rem;
+	padding-top: 2rem
+}
+.visionbutton{
+	background-color: rgba(34, 34, 34, 0.8);
+  	border: 1px solid #c78c06;
+  	color: white;
+  	padding: 25px 32px;
+  	text-align: center;
+  	display: inline-block;
+  	font-size: 21px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+}
+/* section vision styling ends here */
+
+/* section team styling starts here */
+ .john{
+	background-color: #ffe6ac;
+ }
+ .bob{
+	background-color: #ffe6ac;
+ }
+ .section-team img{
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+ }
+ .section-team p{
+	padding: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+ }
+.section-team h4,h3{
+	padding: 0.5rem;
+}
+.line{ /*customizes line break between h4 and p*/
+	background-color: #c78c06;
+	height: 2px;
+	margin: 0 1rem;
+}
+/* section team styling ends here */
+
+/* section contact styling starts here */
+.section-contact h3{
+	padding: 0;
+	margin-bottom: 1rem;
+}
+.contact input[type=text]{
+ width: 100%;
+ height: 2rem;
 }
 
+#fullname{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+#email{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+#message{
+	margin-top: 0.5rem;
+	height: 8rem;
+}
+#send{
+	background-color: #222;
+	color: #c78c06;
+	padding: 3px 5px;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: 21px;
+}
+/* section contact styling ends here */
+
+/* Start of Hours Of Operation table customization */
+.hours{
+	max-width: 760px;
+}
+.hours table{
+	width:90vw;
+	max-width: 760px;
+}
+ table,td,th{
+	border: 1px solid black;
+	margin-bottom: 1rem;
+ }
+ th{
+	font-size: 14px;
+	background-color: #ffe6ac;
+	height: 2rem;
+	padding-top: 1rem;
+	text-align: center;
+ }
+ td{
+	font-size: 14px;
+	height: 1rem;
+	padding: 1rem;
+ }
+
+/* End of Hours Of Operation table customization */
+
+/* customizes footer */
 footer{
 	background-color: #222;
+	font-size: 14px;
 	color: #c78c06;
 	padding: 10px;
 }
 footer a{
-	text-decoration: none;
 	color: #c78c06;
 }	
+/* ===END OF MOBILE STYLING=== */
+/* default media query for mobile */
+@media screen and (min-width: 760px){
+	.container {
+		width: 760px;
+	}
+}
