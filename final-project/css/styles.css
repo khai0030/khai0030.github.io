@@ -387,3 +387,342 @@ footer a{
 		width: 760px;
 	}
 }
+/* ===START OF DESKTOP STYLING=== */
+/* media query for desktop */
+@media screen and (min-width: 760px) and (max-width:1200px){
+	
+	body{
+		font-family:'Open Sans', sans-serif;
+		background-color: white;
+	}
+	body p{
+		font-size: 14px;
+	}
+	
+	/* nav styling starts here */
+	ul{
+		display:grid;
+		grid-template-columns: repeat(8, 1fr)
+	}
+	nav{
+		display:grid;
+		grid-template-columns: repeat(3, 1fr);
+		background-color: #222;
+	}
+	.logo{
+		background-color:#222;
+		width: 100%;
+	}
+
+	nav li{ 
+		text-align: center;
+		font-size: 20px;
+		display: inline;
+	}
+	
+	nav .homea{
+		background-color: #c78c06;
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #c78c06;
+		display: inline;
+		text-align: center;
+	}
+	/* customizing search bar */
+	#search{
+		font-size: 20px;
+		font-family: Arial;
+		display: inline;
+	}
+	.searchbutton {
+		float: right;
+		padding: 14px;
+	}
+	/* nav styling ends here */
+	
+	/* customizing header */
+	.intro{
+		background-image: url("../images/main-banner.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 8.5% 0;
+	}
+	.blacksquare{
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 60px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		margin:50px;
+	}
+	.blacksquare p{
+		color: white;
+		margin-bottom: 10px;
+	}
+	
+	/* modifies button in header */
+	.button1{
+		background-color: #c78c06; 
+		border: none;
+		color: #222;
+		padding: 25px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 24px;
+	}
+	
+	/* modifies all headings in html */
+	h1{  /*Main Title*/
+		font-weight: bold;
+		font-size: 81px;
+		color: white;
+	}
+	h2{  /*about, services, vision, team, location, contact*/
+		font-weight: bold;
+		font-size: 54px;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+	h3{  /*every category in services, john doe, bob rite, message*/
+		font-weight: bold;
+		font-size: 36px;
+	}
+	h4{  /*CEO/CFO, Co-owner*/
+		font-weight: bold;
+		font-size: 16px;
+	}
+	
+	.container{
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	/* section about styling starts here */
+	.section-about{
+		background-color: #ffe6ac;
+		padding: 10px;
+	}
+	.section-about img{
+		width: 100%;
+		height: auto;
+	}
+	.section-about h2,p{
+		padding: 1rem 1rem;
+	}
+	/* section about styling ends here */
+	
+	/* section services styling starts here */
+	.section-services{
+		padding: 1rem 1rem;
+		max-width: 760px;
+	}
+	
+	.digital{
+		background-color: #ffe6ac;
+		margin-bottom: 1rem;
+	}
+	.digital img{
+		width: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
+	.digital h3,p{
+		padding: 10px;
+	}
+	
+	.marketing{
+		background-color: #ffe6ac;
+		margin-bottom: 1rem;
+	}
+	.marketing img{
+		width: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
+	.marketing h3,p{
+		padding: 10px;
+	}
+	
+	.video{
+		background-color: #ffe6ac;
+		margin-bottom: 1rem;
+	}
+	.video img{
+		width: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
+	.video h3,p{
+		padding:10px;
+	}
+	
+	.web{
+		background-color: #ffe6ac;
+		margin-bottom: 1rem;
+	}
+	.web img{
+		width: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
+	.web h3,p{
+		padding:10px;
+	}
+	
+	.print{
+		background-color: #ffe6ac;
+		margin-bottom: 1rem;
+	}
+	.print img{
+		width: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
+	.print h3,p{
+		padding:10px;
+	}
+	
+	/* modifies all buttons in section services */
+	.buttons{
+		background-color: #222; 
+		border: none;
+		color: white;
+		padding: 25px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 24px;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+	}
+	/* section services styling ends here */
+	
+	/* section vision styling starts here */
+	.section-vision{
+		background-image: url("../images/vision.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		color: white;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+	}
+	.vision{
+		padding: 0.5rem 1rem;
+		padding-top: 2rem
+	}
+	.visionbutton{
+		background-color: rgba(34, 34, 34, 0.8);
+		border: 1px solid #c78c06;
+		color: white;
+		padding: 25px 32px;
+		text-align: center;
+		display: inline-block;
+		font-size: 24px;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+	}
+	/* section vision styling ends here */
+	
+	/* section team styling starts here */
+	 .john{
+		background-color: #ffe6ac;
+	 }
+	 .bob{
+		background-color: #ffe6ac;
+	 }
+	 .section-team img{
+		width: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	 }
+	 .section-team p{
+		padding: 1rem;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+	 }
+	.section-team h4,h3{
+		padding: 0.5rem;
+	}
+	.line{ /*customizes line break between h4 and p*/
+		background-color: #c78c06;
+		height: 2px;
+		margin: 0 1rem;
+	}
+	/* section team styling ends here */
+	
+	/* section contact styling starts here */
+	.section-contact h3{
+		padding: 0;
+		margin-bottom: 1rem;
+	}
+	.contact input[type=text]{
+	 width: 100%;
+	 height: 2rem;
+	}
+	
+	#fullname{
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	#email{
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	#message{
+		margin-top: 0.5rem;
+		height: 8rem;
+	}
+	#send{
+		background-color: #222;
+		color: #c78c06;
+		padding: 3px 5px;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+		font-size: 24px;
+		font-family: arial;
+	}
+	/* section contact styling ends here */
+	
+	/* Start of Hours Of Operation table customization */
+	.hours{
+		max-width: 760px;
+	}
+	.hours table{
+		width:90vw;
+		max-width: 760px;
+	}
+	 table,td,th{
+		border: 1px solid black;
+		margin-bottom: 1rem;
+	 }
+	 th{
+		font-size: 14px;
+		background-color: #ffe6ac;
+		height: 2rem;
+		padding-top: 1rem;
+		text-align: center;
+	 }
+	 td{
+		font-size: 14px;
+		height: 1rem;
+		padding: 1rem;
+	 }
+	
+	/* End of Hours Of Operation table customization */
+	
+	/* customizes footer */
+	footer{
+		background-color: #222;
+		font-size: 14px;
+		color: #c78c06;
+		padding: 10px;
+	}
+	footer a{
+		color: #c78c06;
+	}	
+}
+/* ===END OF DESKTOP STYLING=== */

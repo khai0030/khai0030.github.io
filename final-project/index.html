@@ -12,34 +12,35 @@
 </head>
 <body>
     <header><!--Header section-->
-    <nav><!--Nav Area-->
-        <div class=logo>
-            <img src="images/logo.png" alt="logo">
+        <div class="header">
+            <nav><!--Nav Area-->
+                <div class=logo>
+                    <img src="images/logo.png" alt="logo">
+                </div>
+            <ul>
+                <li class="home"><a href="home" class="homea">Home</a></li> 
+                <li><a href="about">About Us</a></li>
+                <li><a href="Services">Services</a></li>
+                <li><a href="team">Team</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+    
+            <form> <!--search bar-->
+                <input type="text" name="search" placeholder="search" id="search"> 
+                <button class="searchbutton">&#x1F50D;</button> <!--makes button-->
+            </form>
+            </nav>
         </div>
-        <ul>
-            <li class="home"><a href="home" class="homea">Home</a></li> 
-            <li><a href="about">About Us</a></li>
-            <li><a href="Services">Services</a></li>
-            <li><a href="team">Team</a></li>
-            <li><a href="contact">Contact</a></li>
-        </ul>
-    
-        <form> <!--search bar-->
-            <input type="text" name="search" placeholder="search" id="search"> 
-            <button class="searchbutton">&#x1F50D;</button> <!--makes button-->
-        </form>
-    </nav>
-    
-<div class="intro">
-    <div class="blacksquare">
-        <h1>Welcome to the Three Star Media</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
-        <button class="button1">Connect with us &#9654;</button>
-    </div>
-</div>
-    
-    
-</header>
+
+        <div class="intro">
+            <div class="blacksquare">
+                <h1>Welcome to the Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
+                <button class="button1">Connect with us &#9654;</button>
+            </div>
+        </div>
+        
+    </header>
 
     <main>
         <div class="container">
@@ -116,24 +117,25 @@
             </section><!--end section-team-->
 
             <section class="section-contact"> <!--contact section-->
-            <h2>Contact Us</h2>
-            <section>
-                <h3>Send us a message</h3>
-                <form> <!--makes form-->
-                <div class="contact">
-                    <label for="fullname">Full Name</label>
-                    <input id="fullname" type="text">
+                <h2>Contact Us</h2>
+                <section>
+                    <h3>Send us a message</h3>
+                    <form> <!--makes form-->
+                        <div class="contact">
+                            <label for="fullname">Full Name</label>
+                            <input id="fullname" type="text">
                 
-                    <label for="email">Email</label>
-                    <input id="email" type="text">
+                            <label for="email">Email</label>
+                            <input id="email" type="text">
                
-                    <label for="message">Message</label>
-                    <input id="message" type="text">
-                </div>
-                <div>
-                    <input type="submit" id="send" value="Send">
-                </div>
-                </form><!--end section-contact-->
+                            <label for="message">Message</label>
+                            <input id="message" type="text">
+                        </div>
+                        <div>
+                            <input type="submit" id="send" value="Send">
+                        </div>
+                    </form><!--end section-contact-->
+                </section>
             </section>
             
             <section class="hours">
@@ -164,6 +166,7 @@
                 <h2>Location</h2>
                 <em><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518045395!2d-75.75712548419932!3d45.34993154908129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1637809210617!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></em> <!--embeds map-->
             </section>
+        </div>
     </main>
 
     <footer>
